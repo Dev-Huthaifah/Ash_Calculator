@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ash Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Ash Calculator</h2>
+    <input type="text" id="result" readonly>
+    <table>
+      <tr>
+        <td><input type="button" value="1" onclick="addToResult('1')"></td>
+        <td><input type="button" value="2" onclick="addToResult('2')"></td>
+        <td><input type="button" value="3" onclick="addToResult('3')"></td>
+        <td><input type="button" class="oper" value="+" onclick="addToResult('+')"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="4" onclick="addToResult('4')"></td>
+        <td><input type="button" value="5" onclick="addToResult('5')"></td>
+        <td><input type="button" value="6" onclick="addToResult('6')"></td>
+        <td><input type="button" class="oper" value="-" onclick="addToResult('-')"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="7" onclick="addToResult('7')"></td>
+        <td><input type="button" value="8" onclick="addToResult('8')"></td>
+        <td><input type="button" value="9" onclick="addToResult('9')"></td>
+        <td><input type="button" class="oper" value="*" onclick="addToResult('*')"></td>
+      </tr>
+      <tr>
+        <td><input type="button" value="0" onclick="addToResult('0')"></td>
+        <td><input type="button" value="." onclick="addToResult('.')"></td>
+        <td><input type="button" style="background-color: rgb(174, 36, 36); color: white;"
+           value="C" onclick="clearResult()"></td>
+        <td><input type="button" class="oper" value="/" onclick="addToResult('/')"></td>
+      </tr>
+      <tr>
+        <td colspan="4"><input class="assign" type="button" value="=" onclick="calculateResult()"></td>
+      </tr>
+    </table>
+  </div>
+  <script src="script.js">
+  </script>
+</body>
+
+</html>
